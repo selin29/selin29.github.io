@@ -5,16 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>E-Reservasi RSUD Kota Mataram | Log in</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://103.148.49.81:6060/registrasionline/assets/adminlte3/plugins/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="http://103.148.49.81:6060/registrasionline/assets/adminlte3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <link rel="stylesheet" href="http://103.148.49.81:6060/registrasionline/assets/adminlte3/dist/css/adminlte.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-  <!-- datatables -->
-  <link rel="stylesheet" href="http://103.148.49.81:6060/registrasionline/assets/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-  <!-- jquery-ui -->
-  <link rel="stylesheet" href="http://103.148.49.81:6060/registrasionline/assets/jquery-ui/themes/base/jquery-ui.css">
 </head>
 <body class="hold-transition login-page">
 <div class="login-box" style="width: 80%;">
@@ -233,93 +225,6 @@
     <!-- /.login-card-body -->
   </div>
 </div>
-<!-- /.login-box -->
-
-<!-- jQuery -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/adminlte3/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/adminlte3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/adminlte3/dist/js/adminlte.min.js"></script>
-
-<!-- datatables -->
-<!-- <script src="http://103.148.49.81:6060/registrasionline/assets/jquerydatatable/jquery.dataTables.min.js"></script> -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/datatables/js/jquery.dataTables.min.js"></script>
-
-<!-- bootbox -->
-<script type="text/javascript" src="http://103.148.49.81:6060/registrasionline/assets/bootbox/bootbox.js"></script>
-
-<!-- jquery-mask -->
-<script type="text/javascript" src="http://103.148.49.81:6060/registrasionline/assets/jquery_mask/jquery.mask.js"></script>
-
-<!-- Bootstrap validator -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/bootstrap-validator/js/bootstrapValidator.js"></script>
-
-<!-- jquery-ui -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/jquery-ui/jquery-ui-2.js"></script>
-
-<!-- Sweat Alert -->
-<script src="http://103.148.49.81:6060/registrasionline/assets/sweatalert/sweatalert.js"></script>
-
-<script src="http://103.148.49.81:6060/registrasionline/assets/fa/fa.min.js"></script>
-
-<!-- SELECT 2 -->
-<link href="http://103.148.49.81:6060/registrasionline/assets/select2/select2.min.css" rel="stylesheet" />
-<script src="http://103.148.49.81:6060/registrasionline/assets/select2/select2.min.js"></script>
-
-
-
-<script>
-  const numberWithCommas = (x) => {
-        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      }  
-
-  const untitik = (i) => {
-      return typeof i === 'string' ?
-                          i.replace(/[\$,]/g, '')*1 :
-                          typeof i === 'number' ?
-                              i : 0;
-  }
-
-  function AllowOnlyNumbers(e) {
-
-    e = (e) ? e : window.event;
-    var clipboardData = e.clipboardData ? e.clipboardData : window.clipboardData;
-    var key = e.keyCode ? e.keyCode : e.which ? e.which : e.charCode;
-    var str = (e.type && e.type == "paste") ? clipboardData.getData('Text') : String.fromCharCode(key);
-
-    return (/^\d+$/.test(str));
-  }
- 
-</script>
-<style>
-  .login-page {
-   background-image: url("http://103.148.49.81:6060/registrasionline/images/custom/login.png") !important;
-
-  /* Full height */
-  /* height: 100%; */
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-
-<!-- validator parsley -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.js"></script>
-<script>   
-    // Parsley plugin initialization with tweaks to style Parsley for Bootstrap 4
-    $("#form").parsley({
-        errorClass: 'is-invalid text-danger',
-        successClass: 'is-valid', // Comment this option if you don't want the field to become green when valid. Recommended in Google material design to prevent too many hints for user experience. Only report when a field is wrong.
-        errorsWrapper: '<span class="form-text text-danger"></span>',
-        errorTemplate: '<span></span>',
-        trigger: 'change'
-    }) /* If you want to validate fields right after page loading, just add this here : .validate()*/ ;
-
-    // Parsley full doc is avalailable here : https://github.com/guillaumepotier/Parsley.js/
-</script>
 
 <script type="text/javascript">
 $(document).ready(function(){
